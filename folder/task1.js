@@ -83,18 +83,18 @@
 // і буде вертати кількість голосних літер.aeiouAEIOU 
 // - рядок з голосними в англ алфавіті
 
-function countVowels(string) {
-    // console.log(string);
-    const vowels = "aeiouAEIOU";
-    let total = 0;
-    for (let item of string) {
-        // console.log(item);
-        if (vowels.includes(item)) {
-            total += 1;
-        }
-    }
-    console.log(total);
-}
+// function countVowels(string) {
+//     // console.log(string);
+//     const vowels = "aeiouAEIOU";
+//     let total = 0;
+//     for (let item of string) {
+//         // console.log(item);
+//         if (vowels.includes(item)) {
+//             total += 1;
+//         }
+//     }
+//     console.log(total);
+// }
 
-countVowels('the quick brown fox')
+// countVowels('the quick brown fox')
 // countVowels()

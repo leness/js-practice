@@ -37,16 +37,16 @@
 // пустий чи ні.Якщо обєкт пустий то повернути true інакше false
 
 
-// const isObjectEmpty = function (obj) {
-//     const keys = Object.keys(obj)
-//     console.log(keys);
-//     console.log(keys.length);
-//     if (keys.length === 0) return true;
-//     return false;
-// }
+const isObjectEmpty = function (obj) {
+    const keys = Object.keys(obj)
+    console.log(keys);
+    console.log(keys.length);
+    if (keys.length === 0) return true;
+    return false;
+}
 
-// console.log(isObjectEmpty({}));
-// console.log(isObjectEmpty({name: 'user', age: 21 }));
+console.log(isObjectEmpty({}));
+console.log(isObjectEmpty({name: 'user', age: 21 }));
 
 
 // 3.

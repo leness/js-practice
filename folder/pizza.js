@@ -105,9 +105,6 @@ const pizza = {
     toGetTotalTime() { },
     
     toValidateOrder() { },
-
-
-    
 }
 console.log(pizza);
 pizza.toSetSize(SIZES.BIG)
