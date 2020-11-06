@@ -39,20 +39,5 @@
 // console.log(myNewCounter);
 
 
-let userInput = prompt("Введи число, друг!")
-let computerImput = Math.floor(Math.random() * 11);
-// console.log(computerImput);
-if (userInput === null) {
-    alert('Отменено пользователем')
-} else {
-    userInput = +userInput;
-    alert(userInput);
-    if (userInput === computerImput) {
-    alert('Совпало ', userInput, computerImput);
-    } else if (userInput === NaN || userInput < 1 || userInput > 10 ) {
-        alert('Вы ввели невалидное значение');
-    } else {
-    alert('Не совпало ', userInput, computerImput);
-}
-}
+
 
