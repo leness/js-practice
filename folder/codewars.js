@@ -40,6 +40,54 @@ function saleHotdogs(n){
 const saleHotdogs=n=>n*(n<5 ? 100 : n>=5 && n<10 ? 95 : 90);
 
 
+
+// Training JS #8: Conditional statement--switch
+// 1.
+function howManydays(month){
+  var days;
+  switch (month){
+  case 2:
+      return 28;
+      break;
+  case 4:
+  case 6:
+  case 9:
+  case 11:
+      return 30;
+      break;
+  case 1:
+  case 3:
+  case 5:
+  case 7:
+  case 8:
+  case 10:
+  case 12:
+      return 31;
+  }
+  return days;
+}
+// 2.
+function howManydays(month){
+  switch (month){
+     case 2: return 28
+     case 4:
+     case 6:
+     case 9:
+     case 11: return 30
+  }
+  return 31
+}
+// 3.
+function howManydays(month){
+  switch ( month ){
+    case 2 : return 28
+    case 4: case 6: case 9: case 11: return 30
+    default: return 31
+  }
+}
+
+
+
 // //refer to the example and write your first JS function
 // function helloWorld(){
 // var regex = new RegExp(',', 'g');
@@ -65,15 +113,3 @@ const popElement = array => array.splice(0, array.length - 1);
 
 
 
-// trueOrFalse(a > b)
-// console.log(a > b);
-// Test.assertSimilar(trueOrFalse(a>b),"false");
-    // Test.assertSimilar(trueOrFalse(a===b),"false");
-    // Test.assertSimilar(trueOrFalse(a<b),"true");
-    // Test.assertSimilar(trueOrFalse(a!==b),"true");
-    // Test.assertSimilar(trueOrFalse(b>c),"true");
-    // Test.assertSimilar(trueOrFalse(b===c),"false");
-    // Test.assertSimilar(trueOrFalse(b<c),"false");
-    // Test.assertSimilar(trueOrFalse(b!==c),"true");
-    // Test.assertSimilar(trueOrFalse(a===c),"true");
-    // Test.assertSimilar(trueOrFalse(a!==c),"false");
