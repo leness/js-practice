@@ -40,7 +40,6 @@ function saleHotdogs(n){
 const saleHotdogs=n=>n*(n<5 ? 100 : n>=5 && n<10 ? 95 : 90);
 
 
-
 // Training JS #8: Conditional statement--switch
 // 1.
 function howManydays(month){
@@ -170,5 +169,47 @@ function solution(a, b) {
 // 
 function solution(a, b) {
   return a.length < b.length ? a + b + a : b + a + b
+}
+// ***
+
+
+// ***
+function divide(weight){
+  return (1  <  weight  <=  100) ? weight % 2 === 0 && weight > 2 : weight % 2 !== 0;
+}
+// 
+
+
+// ***Grasshopper - Grade book
+function getGrade (s1, s2, s3) {
+  let i = (s1 + s2 + s3) / 3
+   
+    if( i >= 90 &&  i <= 100) {
+    return 'A'
+    } else if ( i >= 80 && i <= 90){
+    return 'B' 
+    }  else if ( i >= 70  && i <= 80) {
+    return 'C' 
+    } else if ( i >= 60 && i <= 70) {
+    return 'D'
+    } else if(i >= 0  && i < 60) {
+    return 'F'
+    }
+}
+// 
+function getGrade(s1, s2, s3) {
+  var avg = (s1 + s2 + s3) / 3;
+  switch (true) {
+    case (avg >= 90):
+      return 'A';
+    case (avg >= 80):
+      return 'B';
+    case (avg >= 70):
+      return 'C';
+    case (avg >= 60):
+      return 'D';
+    default:
+      return 'F';
+  }
 }
 // ***
