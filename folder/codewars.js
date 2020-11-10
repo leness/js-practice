@@ -86,6 +86,16 @@ function howManydays(month){
   }
 }
 
+// ***
+
+function main (verb, noun) {
+  return verb + noun
+}
+// 
+const main = (verb, noun) => verb + noun;
+
+// ***
+
 
 
 // //refer to the example and write your first JS function
@@ -112,4 +122,53 @@ const popElement = array => array.splice(0, array.length - 1);
 
 
 
+//*** 
+function checkAlive (health) {
+  if (health <= 0) { 
+    return false
+  } else if(health > 0) {
+    return true
+  }
+}
+//
+const checkAlive = (health) => health > 0
+//*** 
 
+
+
+// ***
+function combineNames(first, last) {
+  return first + " " + last;
+}
+// 
+const combineNames = (...names) => names.join(' ');
+// 
+const combineNames = (a, b) => `${a} ${b}`;
+// ***
+
+
+// ***
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+}
+// 
+const goals = (a, b, c) => a + b + c;
+// 
+const goals = (...goalsArray) => goalsArray.reduce((a, b) => a + b);
+// ***
+
+
+
+// ***
+function solution(a, b) {
+    if (a.length < b.length) {
+        return a + b + a
+    } else if (a.length > b.length) {
+        return b + a + b
+    }
+}
+// 
+function solution(a, b) {
+  return a.length < b.length ? a + b + a : b + a + b
+}
+// ***
